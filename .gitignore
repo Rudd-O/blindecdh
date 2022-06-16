@@ -1,3 +1,4 @@
+*.dist-info
 dist
 src
 __pycache__
