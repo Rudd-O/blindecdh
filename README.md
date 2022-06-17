@@ -1,8 +1,12 @@
 # A simple implementation of unauthenticated ECDH
 
-This package implements unauthenticated ECDH between two endpoints.
-Authentication can then later be added by, for example, mutual short string
-authentication (as exemplified by the simpleauthstrings package).
+This package implements unauthenticated ECDH (the Elliptic Curve
+Diffie-Hellman key agreement protocol) between two endpoints.  After the
+exchange is complete, you can then add authentication to verify that both
+parties are who they say they are — for example, mutual short string
+authentication by displaying a derivative of the key (derived key) to
+both parties, as exemplified by the
+[simpleauthstrings](https://github.com/Rudd-O/simpleauthstrings) package.
 
 Here is a sample with working code:
 

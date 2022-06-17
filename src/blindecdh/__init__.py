@@ -7,11 +7,13 @@ The exchange happens by using the ECDHProtocol on both sides, exchanging the
 peer public key of one instance with the other, and viceversa.  Completed
 exchange returns a CompletedECDH instance.
 
-Unless both sides of the ECDH exchange, you must not use the derived or shared
-keys on the CompletedECDH instances to perform cryptography — otherwise you
-will be vulnerable to an active man-in-the-middle attack.
+Unless both sides of the ECDH exchange have verified that the derived keys
+match, you must not use the derived or shared keys on the CompletedECDH
+instances to perform cryptography — otherwise you will be vulnerable to
+an active man-in-the-middle attack.
 
-The README.md file included in the package has a simple usage example for this.
+The README.md file included in the package has a simple usage example for this,
+as well as suggestions on how to perform the authentication / verification.
 
 This is mostly based on
 https://medium.com/asecuritysite-when-bob-met-alice/ecdh-using-python-and-hazmat-39d5b94b2e15  # noqa
