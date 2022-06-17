@@ -43,11 +43,11 @@ class CompletedECDH(object):
     Attributes:
         private_key: the private key used by the ECDH protocol
         public_key: the public key corresponding to that private key
-        shared_key: the key built by both ends after ECDH
-        derived_key: a SHA256 HKDF derivation based on the shared key -
-        this is what you probably should be using to initialize encrypted
-        communications (of course, after verifying that both sides have
-        the same derived key)
+        shared_key: byte array (bytes) -- key built by both ends after ECDH
+        derived_key: 32-byte array (bytes) -- a SHA256 HKDF derivation
+        based on the shared key - this is what you probably should be
+        using to initialize encrypted communications (of course, after
+        verifying that both sides have the same derived key)
     """
 
     @property
