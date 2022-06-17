@@ -11,6 +11,8 @@ Unless both sides of the ECDH exchange, you must not use the derived or shared
 keys on the CompletedECDH instances to perform cryptography — otherwise you
 will be vulnerable to an active man-in-the-middle attack.
 
+The README.md file included in the package has a simple usage example for this.
+
 This is mostly based on
 https://medium.com/asecuritysite-when-bob-met-alice/ecdh-using-python-and-hazmat-39d5b94b2e15  # noqa
 
@@ -26,7 +28,7 @@ from cryptography.hazmat.primitives.asymmetric.ec import (
 )
 
 
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 
 
 HKDF_SIZE = 32  # 256 bit HKDF
