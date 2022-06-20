@@ -74,11 +74,15 @@ class ECDHProtocol(object):
     the Bitcoin elliptic curve.
     """
 
-    def __init__(self, private_key: Optional[EllipticCurvePrivateKey] = None) -> None:
+    def __init__(
+        self,
+        private_key: Optional[EllipticCurvePrivateKey] = None,
+    ) -> None:
         """
         Initialize the exchange protocol.
 
-        You must supply an EllipticCurvePrivateKey.
+        You may supply an EllipticCurvePrivateKey.  If none, the Bitcoin
+        curve is used to generate one.
         """
         if private_key is None:
             private_key = ec.generate_private_key(ec.SECP256K1())
