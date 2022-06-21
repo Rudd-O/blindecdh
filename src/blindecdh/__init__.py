@@ -30,7 +30,7 @@ from cryptography.hazmat.primitives.asymmetric.ec import (
 )
 
 
-__version__ = "0.1.8"
+__version__ = "0.1.9"
 
 
 HKDF_SIZE = 32  # 256 bit HKDF
