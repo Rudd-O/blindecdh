@@ -70,7 +70,7 @@ result = bob.run(alices_public_key)
 print(result.derived_key)
 ```
 
-See [module](src/blindecdh/__init__.py) for developer documentation.
+See [module](https://github.com/Rudd-O/blindecdh/blob/master/src/blindecdh/__init__.py) for developer documentation.
 
 This package is distributed under the GNU Lesser General Public License v2.1.
 For relicensing, contact the package author.
